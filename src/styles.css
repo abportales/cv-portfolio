@@ -1,5 +1,5 @@
  * {
-   /* box-sizing: border-box; */
+   box-sizing: border-box;
  }
 
  body {
@@ -10,31 +10,49 @@
 
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   background: linear-gradient(to right, #336699 0%, #00ffff 100%);
-
+   background: linear-gradient(to bottom left, #0099cc 0%, #003366 100%);
  }
 
  .bgDark {
    background-color: #242424;
  }
 
+ .mainSideBar {
+   width: 25%;
+   display: flex;
+ }
+
+ .mainContent {
+   width: 75%;
+   display: flex;
+ }
+
  /* /************************************************************************ SideBar */
  .containerSideBar {
    overflow-x: 0;
+   background-color: #242424;
+ }
+
+ .containerSideBar .row {
+   margin-right: 0px;
+   position: fixed;
+   top: 0%;
+   bottom: 0%;
  }
 
  .sidenav {
    display: flex;
    width: 100%;
    flex-direction: column;
-   justify-items: center;
    justify-content: center;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
+   min-height: 100vh;
  }
 
- .sidenav .active{
-  color: aqua;
-}
+ .sidenav .active,
+ .sidenav .drop:hover {
+   color: aqua;
+ }
 
  .sidenav ul {
    list-style: none;
@@ -46,29 +64,209 @@
    margin-bottom: 1rem;
  }
 
+ .sidenav li i {
+   margin-left: 0.75rem;
+ }
+
  .sidenav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 1rem;
-    margin-right: 1rem;
+   text-decoration: none;
+   color: white;
+   margin-left: 0.75rem;
+ }
+
+ .sidenav a>span {
+   margin-left: 0.5rem;
  }
 
  .sidenav ul li:hover {
-  border-left: aqua dotted 2px;
-  transition: 0.5s ease all;
-}
+   border-left: aqua dotted 2px;
+   transition: 0.5s ease all;
+ }
 
-.sidenav li ul {
-  padding: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  
-}
+ .sidenav li ul {
+   margin-left: 0.25rem;
+ }
 
  .sidenav li ul li {
-  margin-left: 2.5rem;
-  margin-top: 1rem;
-}
+   margin-left: 2rem;
+   margin-top: 1rem;
+ }
 
  /* /************************************************************************ SideBar Ends*/
- 
+ /* /************************************************************************ CV*/
+ .containerCV {
+   overflow-y: 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .containerCV .card {
+   background-color: #242424;
+   margin-bottom: 1rem;
+   margin: 1rem;
+ }
+
+ .containerCV h1 {
+   margin-top: 1rem;
+   align-self: center;
+ }
+
+ .containerCV hr {
+   border: antiquewhite solid 1px;
+   margin: 5px !important;
+ }
+
+ .containerCV h2 {
+   align-self: center;
+ }
+
+ .containerCV .experience,
+ .containerCV .profile {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 1rem;
+ }
+
+ .containerCV .experience h3,
+ .containerCV .profile h3 {
+   border-top: #242424 solid 1px;
+   border-bottom: #242424 solid 1px;
+   color: #242424;
+   align-self: center;
+   text-align: center;
+   width: 50%;
+ }
+
+ .containerCV .profile blockquote {
+   font-size: 1.2rem;
+   align-self: center;
+   text-align: justify;
+   font-weight: 500;
+   width: 75%;
+ }
+
+ .containerCV .experience {
+   font-size: 1.2rem;
+   font-weight: 400;
+   align-self: center;
+   text-align: justify;
+   width: 75%;
+ }
+
+ .containerCV .experience h4 {
+   margin-top: 2rem;
+   border-bottom: antiquewhite solid 1px;
+ }
+
+ .containerCV .experience h5 {
+   color: rgb(214, 144, 245);
+ }
+
+ .containerCV .experience h4 span {
+   color: rgb(181, 173, 173);
+   font-style: italic;
+ }
+
+ .containerCV .experience h5 span {
+   color: rgb(184, 233, 87);
+   font-style: italic;
+ }
+
+ .containerCV .experience .period {
+   color: aqua;
+ }
+
+ /* /************************************************************************ CV ends*/
+
+ /* /************************************************************************ Screen 992*/
+ @media (max-width: 992px) {
+   .sidenav {
+     font-size: 1.1rem;
+   }
+
+   .sidenav li i {
+     margin-left: 0;
+   }
+
+   .sidenav li ul li {
+     margin-left: 0;
+   }
+ }
+
+ /* /************************************************************************ Screen 992 Ends*/
+ /* /************************************************************************ Screen 768*/
+ @media (max-width: 768px) {
+
+   .mainSideBar {
+     width: 22%;
+     display: flex;
+   }
+
+   .mainContent {
+     width: 78%;
+     display: flex;
+   }
+
+   .sidenav {
+     font-size: 0.9rem;
+   }
+
+   .sidenav a {
+     margin-left: 0;
+   }
+
+   .containerCV .experience h3,
+   .containerCV .profile h3 {
+     width: 75%;
+   }
+
+   .containerCV .profile blockquote {
+     font-size: 1rem;
+     font-weight: 500;
+     width: 90%;
+   }
+
+   .containerCV .experience {
+     font-size: 1rem;
+     font-weight: 400;
+     width: 90%;
+   }
+
+ }
+
+ /* /************************************************************************ Screen 768 ends*/
+
+ @media (max-width: 576px) {
+   .mainSideBar {
+     width: 14%;
+     display: flex;
+   }
+
+   .mainContent {
+     width: 86%;
+     display: flex;
+   }
+
+   .sidenav a>span,
+   .sidenav a>.drop {
+     display: none;
+   }
+
+   .sidenav {
+     font-size: 1.6rem;
+   }
+
+   .containerCV .card h1 {
+     font-size: 1.3rem;
+   }
+
+   .containerCV .card h2 {
+     font-size: 1.3rem;
+   }
+
+   .containerCV .experience ul {
+     padding-left: 1rem;
+   }
+ }

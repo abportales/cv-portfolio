@@ -10,73 +10,79 @@ export const Sidebar = () => {
         <>
             <div className="container-fluid containerSideBar">
                 <div className="row">
-                    <div className="min-vh-100 bgDark sidenav">
+                    <div className="sidenav">
                         <ul>
                             <li>
                                 <NavLink to="/" className="nav-link">
                                     <i className='bi bi-person-lines-fill'></i>
-                                    <span className='ms-1 d-none d-sm-inline'>Curriculum Vitae</span>
+                                    <span>Curriculum Vitae</span>
                                 </NavLink>
                             </li>
                             <li>
-                                <a href="#" onClick={()=>(setCollapse(!collapse))}>
-                                    <i className='bi bi-android2'></i>
-                                    <span className='ms-1 d-none d-sm-inline'>Desarrollo Web</span> 
+                                <a href="#" onClick={() => (setCollapse(!collapse))}>
+                                    <i className="bi bi-code-square"></i>
+                                    <span>Desarrollo Web</span>
                                     {
                                         (collapse) ?
-                                            <i className="ms-5 bi bi-caret-down-square"></i>
-                                            :   <i className="ms-5 bi bi-caret-up-square"></i>
+                                            <i className="bi bi-caret-down-square drop"></i>
+                                            : <i className="bi bi-caret-up-square drop"></i>
                                     }
                                 </a>
                                 <ul className={collapse ? 'd-none' : 'd-show'}>
                                     <li>
-                                        <NavLink to="/movieapi" className="nav-link">
+                                        <NavLink to="/marcs" className="nav-link">
+                                            <i className="bi bi-wordpress"></i>
+                                            <span>Marc's Seafood</span>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/gifapp" className="nav-link">
                                             <i className="bi bi-filetype-gif"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>Gif App</span>
+                                            <span>Gif App</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="nav-link">
+                                        <NavLink to="/heroes" className="nav-link">
                                             <i className="bi bi-award"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>Heroes</span>
+                                            <span>Heroes</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="nav-link">
+                                        <NavLink to="/ortodoncia" className="nav-link">
                                             <i className="bi bi-window-dock"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>Ortodoncia</span>
+                                            <span>Ortodoncia</span>
                                         </NavLink>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" onClick={()=>(setCollapse2(!collapse2))}>
+                                <a href="#" onClick={() => (setCollapse2(!collapse2))}>
                                     <i className='bi bi-android2'></i>
-                                    <span className='ms-1 d-none d-sm-inline'>Android</span> 
+                                    <span>Android</span>
                                     {
                                         (collapse2) ?
-                                            <i className="ms-5 bi bi-caret-down-square"></i>
-                                            :   <i className="ms-5 bi bi-caret-up-square"></i>
+                                            <i className="bi bi-caret-down-square drop"></i>
+                                            : <i className="bi bi-caret-up-square drop"></i>
                                     }
                                 </a>
                                 <ul className={collapse2 ? 'd-none' : 'd-show'}>
                                     <li>
-                                        <NavLink to="/movieapi" className="nav-link">
+                                        <NavLink to="/movie" className="nav-link">
                                             <i className="bi bi-film"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>Movie API</span>
+                                            <span>Movie API</span>
 
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="nav-link">
+                                        <NavLink to="/blogapp" className="nav-link">
                                             <i className="bi bi-chat-left-text"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>BlogApp</span>
+                                            <span>BlogApp</span>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="nav-link">
+                                        <NavLink to="/easyrestaurant" className="nav-link">
                                             <i className="bi bi-cup-straw"></i>
-                                            <span className='ms-1 d-none d-sm-inline'>Easy Restaurant</span>
+                                            <span>Easy Restaurant</span>
                                         </NavLink>
                                     </li>
                                 </ul>

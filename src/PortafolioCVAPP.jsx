@@ -5,11 +5,11 @@ import { AppRouter } from './router/AppRouter'
 export const PortafolioCVAPP = () => {
     return (
         <>
-            <div className='d-flex'>
-                <div className='d-flex w-25'>
+            <div className='d-flex flex-row'>
+                <div className='mainSideBar'>
                     <Sidebar />
                 </div>
-                <div className='d-flex w-75'>
+                <div className='mainContent'>
                     <AppRouter />
                 </div>
             </div>
