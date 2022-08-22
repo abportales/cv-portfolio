@@ -19,6 +19,12 @@ export const Sidebar = () => {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink to="/contact" className="nav-link">
+                                    <i className="bi bi-file-person"></i>
+                                    <span>Contacto</span>
+                                </NavLink>
+                            </li>
+                            <li>
                                 <a href="#" onClick={() => (setCollapse(!collapse))}>
                                     <i className="bi bi-code-square"></i>
                                     <span>Desarrollo Web</span>

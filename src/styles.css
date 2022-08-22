@@ -18,12 +18,12 @@
  }
 
  .mainSideBar {
-   width: 25%;
+   width: 20%;
    display: flex;
  }
 
  .mainContent {
-   width: 75%;
+   width: 80%;
    display: flex;
  }
 
@@ -35,7 +35,7 @@
 
  .containerSideBar .row {
    margin-right: 0px;
-   position: fixed;
+   position: sticky;
    top: 0%;
    bottom: 0%;
  }
@@ -121,43 +121,69 @@
    align-self: center;
  }
 
- .containerCV .experience,
  .containerCV .profile {
    display: flex;
-   justify-content: center;
    flex-direction: column;
+   justify-content: center;
+   align-self: center;
    margin-top: 1rem;
- }
-
- .containerCV .experience h3,
- .containerCV .profile h3 {
-   border-top: #242424 solid 1px;
-   border-bottom: #242424 solid 1px;
-   color: #242424;
-   align-self: center;
-   text-align: center;
-   width: 50%;
- }
-
- .containerCV .profile blockquote {
-   font-size: 1.2rem;
-   align-self: center;
-   text-align: justify;
-   font-weight: 500;
-   width: 75%;
+   width: 80%;
  }
 
  .containerCV .experience {
+   align-self: center;
+   display: flex;
+   flex-direction: column;
    font-size: 1.2rem;
    font-weight: 400;
-   align-self: center;
+   justify-content: center;
+   margin-top: 1rem;
    text-align: justify;
-   width: 75%;
+   width: 80%;
+ }
+
+ .containerCV h3 {
+   align-self: center;
+   border-bottom: #242424 solid 2px;
+   border-top: #242424 solid 2px;
+   color: #242424;
+   text-align: center;
+   margin-top: 1rem;
+   width: 37.5%;
+ }
+
+ .containerCV .profile .divBlock {
+   display: flex;
+   justify-content: center;
+ }
+
+ .containerCV .profile blockquote {
+   align-self: center;
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-align: justify;
+   width: 80%;
+ }
+
+ .containerCV .languages {
+   display: flex;
+   justify-content: center;
+   gap: 5rem;
+   font-size: 1.1rem;
+   font-weight: 500;
+   width: 100%;
+   margin-top: 1rem;
+ }
+
+ .containerCV .profile .picture {
+   width: 20%;
+   border-radius: 50%;
+   border: #242424 solid 3px;
  }
 
  .containerCV .experience h4 {
-   margin-top: 2rem;
    border-bottom: antiquewhite solid 1px;
+   margin-top: 2rem;
  }
 
  .containerCV .experience h5 {
@@ -176,6 +202,46 @@
 
  .containerCV .experience .period {
    color: aqua;
+ }
+
+ .containerContact {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: 500;
+ }
+
+ .containerContact .card {
+   margin-top: 1rem;
+   background-color: #242424;
+   display: flex;
+   flex-direction: column;
+   width: 75%;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: 500;
+ }
+
+ .containerContact .cardAuto {
+   width: 35%;
+ }
+
+ .containerContact h3 {
+  color: rgb(184, 233, 87);
+ }
+
+ .containerContact ul li {
+   padding: 0.5rem;
+ }
+
+ .containerContact ul li i {
+   padding: 1rem;
+ }
+
+ .containerContact ul li a {
+   color: white;
  }
 
  /* /************************************************************************ CV ends*/
@@ -200,12 +266,12 @@
  @media (max-width: 768px) {
 
    .mainSideBar {
-     width: 22%;
+     width: 18%;
      display: flex;
    }
 
    .mainContent {
-     width: 78%;
+     width: 82%;
      display: flex;
    }
 

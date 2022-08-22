@@ -1,11 +1,12 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { BlogAppPage, CvPage, EasyRestaurantPage, GifAppPage, HeroesPage, MarcsPage, MoviePage, OrtodonciaPage } from "../portfolio/pages"
+import { BlogAppPage, Contacto, CvPage, EasyRestaurantPage, GifAppPage, HeroesPage, MarcsPage, MoviePage, OrtodonciaPage } from "../portfolio/pages"
 
 export const AppRouter = () => {
     return (
         <>
             <Routes>
                 <Route path="/" element={<CvPage />} />
+                <Route path="/contact" element={<Contacto />} />
                 <Route path="/blogapp" element={<BlogAppPage />} />
                 <Route path="/easyrestaurant" element={<EasyRestaurantPage />} />
                 <Route path="/gifapp" element={<GifAppPage />} />

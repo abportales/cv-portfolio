@@ -1,4 +1,5 @@
 export * from './BlogAppPage'
+export * from './Contacto'
 export * from './CvPage'
 export * from './EasyRestaurantPage'
 export * from './GifAppPage'
