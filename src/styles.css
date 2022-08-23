@@ -17,14 +17,10 @@
    background-color: #242424;
  }
 
- .mainSideBar {
-   width: 20%;
-   display: flex;
- }
+ .mainGrid {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
 
- .mainContent {
-   width: 80%;
-   display: flex;
  }
 
  /* /************************************************************************ SideBar */
@@ -33,8 +29,7 @@
    background-color: #242424;
  }
 
- .containerSideBar .row {
-   margin-right: 0px;
+ .containerSideBar .sidenav {
    position: sticky;
    top: 0%;
    bottom: 0%;
@@ -62,33 +57,25 @@
 
  .sidenav li {
    margin-bottom: 1rem;
- }
-
- .sidenav li i {
-   margin-left: 0.75rem;
+   padding: 0.5rem;
  }
 
  .sidenav a {
    text-decoration: none;
    color: white;
-   margin-left: 0.75rem;
  }
 
- .sidenav a>span {
+ .sidenav a > span {
    margin-left: 0.5rem;
+   margin-right: 0.5rem;
  }
 
  .sidenav ul li:hover {
-   border-left: aqua dotted 2px;
-   transition: 0.5s ease all;
- }
-
- .sidenav li ul {
-   margin-left: 0.25rem;
+   border: aqua dotted 2px;
+   transition: 0.1s ease all;
  }
 
  .sidenav li ul li {
-   margin-left: 2rem;
    margin-top: 1rem;
  }
 
@@ -99,12 +86,13 @@
    display: flex;
    flex-direction: column;
    width: 100%;
+   align-items: center;
  }
 
  .containerCV .card {
    background-color: #242424;
-   margin-bottom: 1rem;
    margin: 1rem;
+   width: 90%;
  }
 
  .containerCV h1 {
@@ -121,27 +109,6 @@
    align-self: center;
  }
 
- .containerCV .profile {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-self: center;
-   margin-top: 1rem;
-   width: 80%;
- }
-
- .containerCV .experience {
-   align-self: center;
-   display: flex;
-   flex-direction: column;
-   font-size: 1.2rem;
-   font-weight: 400;
-   justify-content: center;
-   margin-top: 1rem;
-   text-align: justify;
-   width: 80%;
- }
-
  .containerCV h3 {
    align-self: center;
    border-bottom: #242424 solid 2px;
@@ -149,12 +116,14 @@
    color: #242424;
    text-align: center;
    margin-top: 1rem;
-   width: 37.5%;
+   width: 60%;
  }
 
- .containerCV .profile .divBlock {
+ .containerCV .profile {
    display: flex;
-   justify-content: center;
+   flex-direction: row;
+   margin-top: 1rem;
+   width: 90%;
  }
 
  .containerCV .profile blockquote {
@@ -162,28 +131,77 @@
    font-size: 1.2rem;
    font-weight: 500;
    text-align: justify;
-   width: 80%;
- }
-
- .containerCV .languages {
-   display: flex;
-   justify-content: center;
-   gap: 5rem;
-   font-size: 1.1rem;
-   font-weight: 500;
-   width: 100%;
-   margin-top: 1rem;
+   padding: 1rem;
  }
 
  .containerCV .profile .picture {
-   width: 20%;
    border-radius: 50%;
    border: #242424 solid 3px;
+   width: 20%;
+ }
+
+ .containerCV .cardData {
+   background-color: #242424;
+   font-size: 1.3rem;
+   font-weight: 500;
+ }
+
+ .containerCV .cardData h3 {
+   color: rgb(184, 233, 87);
+ }
+
+ .containerCV .cardData ul li a {
+   color: white;
+ }
+
+ .containerCV .cardData .noStyle {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   font-size: 1.1rem;
+   padding: 0;
+   margin: 0.3rem;
+ }
+
+ .containerCV .cardData .noStyle li {
+   list-style: none;
+   padding: 0.2rem;
+ }
+
+ .containerCV .cardData .noStyle li i {
+   padding: 1rem;
+ }
+
+ .containerCV .languages {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   font-size: 1rem;
+   font-weight: 500;
+   margin: 1rem;
+   width: 90%;
+ }
+
+ .containerCV .languages li {
+   padding-left: 1rem;
+   padding-top: 0.5rem;
+ }
+
+ .containerCV .experience {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-top: 1rem;
+   text-align: justify;
+ }
+
+ .containerCV .experience ul li {
+   padding: 0.2rem;
  }
 
  .containerCV .experience h4 {
    border-bottom: antiquewhite solid 1px;
-   margin-top: 2rem;
+   margin-top: 0.5rem;
  }
 
  .containerCV .experience h5 {
@@ -193,11 +211,15 @@
  .containerCV .experience h4 span {
    color: rgb(181, 173, 173);
    font-style: italic;
+   font-weight: 300;
+   font-size: 1.2rem;
  }
 
  .containerCV .experience h5 span {
    color: rgb(184, 233, 87);
    font-style: italic;
+   font-weight: 300;
+   font-size: 1.1rem;
  }
 
  .containerCV .experience .period {
@@ -205,13 +227,16 @@
  }
 
  .containerContact {
+   align-items: center;
    display: flex;
    flex-direction: column;
-   width: 100%;
-   align-items: center;
    font-size: 1.5rem;
    font-weight: 500;
+   width: 100%;
  }
+
+ /* /**************************************************** CV ends*/
+ /* /**************************************************** Contact*/
 
  .containerContact .card {
    margin-top: 1rem;
@@ -229,7 +254,7 @@
  }
 
  .containerContact h3 {
-  color: rgb(184, 233, 87);
+   color: rgb(184, 233, 87);
  }
 
  .containerContact ul li {
@@ -240,39 +265,40 @@
    padding: 1rem;
  }
 
- .containerContact ul li a {
-   color: white;
- }
+ /* /************************************************* Contact ends*/
 
- /* /************************************************************************ CV ends*/
-
- /* /************************************************************************ Screen 992*/
+ /* /************************************************** Screen 992*/
  @media (max-width: 992px) {
+   .mainGrid {
+     grid-template-columns: 1fr 3.5fr;
+   }
+
    .sidenav {
-     font-size: 1.1rem;
+     font-size: 1rem;
+     font-weight: 500;
    }
 
-   .sidenav li i {
-     margin-left: 0;
+   .containerCV .profile .picture {
+     height: 70%;
+     margin-top: 1rem;
+     width: 30%;
    }
 
-   .sidenav li ul li {
-     margin-left: 0;
+   .containerCV .cardData .noStyle {
+     grid-template-columns: repeat(2, 1fr);
+   }
+
+   .containerCV .languages {
+     grid-template-columns: repeat(3, 1fr);
    }
  }
 
- /* /************************************************************************ Screen 992 Ends*/
- /* /************************************************************************ Screen 768*/
+ /* /******************************************** Screen 992 Ends*/
+ /* /************************************************* Screen 768*/
  @media (max-width: 768px) {
 
-   .mainSideBar {
-     width: 18%;
-     display: flex;
-   }
-
-   .mainContent {
-     width: 82%;
-     display: flex;
+   .mainGrid {
+     grid-template-columns: 1fr 4fr;
    }
 
    .sidenav {
@@ -283,40 +309,29 @@
      margin-left: 0;
    }
 
-   .containerCV .experience h3,
-   .containerCV .profile h3 {
-     width: 75%;
-   }
-
    .containerCV .profile blockquote {
      font-size: 1rem;
      font-weight: 500;
-     width: 90%;
    }
+
+   .containerCV .languages li {
+    font-size: 0.9rem;
+  }
 
    .containerCV .experience {
      font-size: 1rem;
-     font-weight: 400;
-     width: 90%;
    }
-
  }
 
- /* /************************************************************************ Screen 768 ends*/
-
+ /* /******************************************** Screen 768 ends*/
+ /* /******************************************** Screen 576 *****/
  @media (max-width: 576px) {
-   .mainSideBar {
-     width: 14%;
-     display: flex;
-   }
+  .mainGrid {
+    grid-template-columns: 1fr 7fr;
+  }
 
-   .mainContent {
-     width: 86%;
-     display: flex;
-   }
-
-   .sidenav a>span,
-   .sidenav a>.drop {
+   .sidenav a > span,
+   .sidenav a > .drop {
      display: none;
    }
 
@@ -324,10 +339,7 @@
      font-size: 1.6rem;
    }
 
-   .containerCV .card h1 {
-     font-size: 1.3rem;
-   }
-
+   .containerCV .card h1,
    .containerCV .card h2 {
      font-size: 1.3rem;
    }
@@ -335,4 +347,25 @@
    .containerCV .experience ul {
      padding-left: 1rem;
    }
+
+   .containerCV .profile {
+     flex-direction: column;
+   }
+
+   .containerCV .profile .picture {
+     height: 60%;
+     margin-top: 0;
+     width: 50%;
+     align-self: center;
+   }
+
+   .containerCV .cardData .noStyle {
+     grid-template-columns: repeat(1, 1fr);
+     margin-left: 1rem;
+   }
+
+   .containerCV .languages {
+     grid-template-columns: repeat(2, 1fr);
+   }
  }
+ /* /******************************************** Screen 576 ends*/

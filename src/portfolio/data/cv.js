@@ -1,5 +1,45 @@
 export const experience = [
     {
+        id: 'exp07',
+        title: 'Malagón Ortodoncia y Estética Dental',
+        subtitle: '',
+        job: 'Desarrollador Web Front-End',
+        technologies: '/ React18, JSX, HTML, CSS, Bootstrap5, Firebase',
+        period: 'Julio 2022 - Agosto 2022',
+        list: [
+            {
+                id: 'exp070',
+                p: 'Desarrollo de página web en lo que destacan las actividades:',
+            },
+        ],
+            sublist: [
+            {
+                id: 'exp071',
+                p: 'Implementación de React-Vite en la optimización de componentes JSX.',
+            },
+            {
+                id: 'exp072',
+                p: 'Implementación de React-Router-Dom para la creacion de una página Single Page Application, para eliminar tiempos entre cambios de página.',
+            },
+            {
+                id: 'exp073',
+                p: 'Implementación de AOS para las animaciones de los componentes JSX.',
+            },
+            {
+                id: 'exp074',
+                p: 'Implementación de Firebase-Hosting como servidor público para mostrar la página.',
+            },
+            {
+                id: 'exp075',
+                p: 'Implementación de Firebase-Storage como servidor de almacenamiento y optimización en la visualización de archivos multimedia de la página.',
+            },
+            {
+                id: 'exp076',
+                p: 'Implementación de libreria GoogleMap en componente JSX.',
+            },
+        ],
+    },
+    {
         id: 'exp00',
         title: 'Restaurant Marc’s Seafood',
         subtitle: '',
@@ -126,7 +166,7 @@ export const experience = [
             },
             {
                 id: 'exp033',
-                p: 'Desarrollo Web Front-end con Bootstrap.',
+                p: 'Desarrollo Web Front-end.',
             },
             {
                 id: 'exp034',
@@ -191,7 +231,7 @@ export const experience = [
         subtitle: 'Departamento de Expedición de Cartas de Antecedentes No Penales',
         job: 'Auxiliar del Departamento',
         technologies: '',
-        period: 'Febrero 2016 - Febrero 2017',
+        period: 'Enero 2015 - Enero 2016',
         list: [
             {
                 id: 'exp060',
