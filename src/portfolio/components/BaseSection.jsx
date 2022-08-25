@@ -9,7 +9,7 @@ export const BaseSection = ({
 }) => {
     return (
         <>
-            <div className="card">
+            <div className="card" data-aos="zoom-in-down">
                 <div className="card-header">
                     <h4>{title} {(subtitle.length > 0) ? <span>{subtitle}</span> : ''}</h4>
                     <h5>{job} {(technologies.length > 0) ? <span>{technologies}</span> : ''}</h5>

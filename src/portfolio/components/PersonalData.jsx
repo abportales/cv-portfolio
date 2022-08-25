@@ -6,7 +6,7 @@ export const PersonalData = () => {
 
   return (
     <>
-      <div className="card cardData">
+      <div className="card cardData" data-aos="zoom-in">
         <h3> Datos Personales </h3>
         <hr />
         <ul className="noStyle">

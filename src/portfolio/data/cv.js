@@ -3,8 +3,8 @@ export const experience = [
         id: 'exp07',
         title: 'Malagón Ortodoncia y Estética Dental',
         subtitle: '',
-        job: 'Desarrollador Web Front-End',
-        technologies: '/ React18, JSX, HTML, CSS, Bootstrap5, Firebase',
+        job: 'Desarrollador Web Front-End /',
+        technologies: 'React18, JSX, HTML, CSS, Bootstrap5, Firebase',
         period: 'Julio 2022 - Agosto 2022',
         list: [
             {
@@ -19,7 +19,7 @@ export const experience = [
             },
             {
                 id: 'exp072',
-                p: 'Implementación de React-Router-Dom para la creacion de una página Single Page Application, para eliminar tiempos entre cambios de página.',
+                p: 'Creacion de una página Single Page Application con React-Router-Dom, para eliminar tiempos entre cambios de página.',
             },
             {
                 id: 'exp073',
@@ -27,11 +27,11 @@ export const experience = [
             },
             {
                 id: 'exp074',
-                p: 'Implementación de Firebase-Hosting como servidor público para mostrar la página.',
+                p: 'Consumo de Firebase-Hosting como servidor público para mostrar la página.',
             },
             {
                 id: 'exp075',
-                p: 'Implementación de Firebase-Storage como servidor de almacenamiento y optimización en la visualización de archivos multimedia de la página.',
+                p: 'Consumo de Firebase-Storage como servidor de almacenamiento y optimización en la visualización de archivos multimedia de la página.',
             },
             {
                 id: 'exp076',
@@ -43,8 +43,8 @@ export const experience = [
         id: 'exp00',
         title: 'Restaurant Marc’s Seafood',
         subtitle: '',
-        job: 'Desarrollador Web y Móvil',
-        technologies: '/ Kotlin, Firebase, MVVM, XML, Wordpress, CSS',
+        job: 'Desarrollador Web y Móvil /',
+        technologies: 'Kotlin, Firebase, MVVM, XML, Wordpress, CSS',
         period: 'Enero 2022 - Junio 2022',
         list: [
             {
@@ -148,7 +148,7 @@ export const experience = [
         id: 'exp03',
         title: 'Panadería Rosiles /',
         subtitle: 'MiPyME',
-        job: 'Desarrollador Full-stack',
+        job: 'Desarrollador Full-stack /',
         technologies: 'Laravel, Bootstrap, PHP, MySQL Workbench',
         period: 'Diciembre 2017 - Abril 2018',
         list: [
@@ -179,7 +179,7 @@ export const experience = [
         id: 'exp04',
         title: 'Asociados de telefonías móviles /',
         subtitle: 'MiPyME',
-        job: 'Desarrollador Front-end',
+        job: 'Desarrollador Front-end /',
         technologies: 'Javascript, Bootstrap, CSS, HTML, Macros-Excel',
         period: 'Marzo 2017 - Noviembre 2017',
         list: [
@@ -202,7 +202,7 @@ export const experience = [
         id: 'exp05',
         title: 'Smart Business Technology /',
         subtitle: 'Procesamiento de transacciones electrónicas',
-        job: 'Desarrollador Back-end',
+        job: 'Desarrollador Back-end /',
         technologies: 'C#, C++, TortoiseSVN',
         period: 'Febrero 2016 - Febrero 2017',
         list: [

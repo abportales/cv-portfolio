@@ -1,4 +1,6 @@
+export * from './BaseCourse'
 export * from './BaseSection'
+export * from './Courses'
 export * from './List'
-export * from './TypeWriter'
 export * from './PersonalData'
+export * from './TypeWriter'

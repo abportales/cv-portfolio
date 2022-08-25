@@ -18,9 +18,9 @@ export const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact" className="nav-link">
+                            <NavLink to="/aboutme" className="nav-link">
                                 <i className="bi bi-file-person"></i>
-                                <span>Perfil</span>
+                                <span>Acerca de mí</span>
                             </NavLink>
                         </li>
                         <li>
@@ -75,7 +75,6 @@ export const Sidebar = () => {
                                     <NavLink to="/movie" className="nav-link">
                                         <i className="bi bi-film"></i>
                                         <span>Movie API</span>
-
                                     </NavLink>
                                 </li>
                                 <li>
