@@ -1,5 +1,9 @@
+import { scrollToTop } from "../helpers/scrollToTop";
 
 export const HeroesPage = () => {
+
+  scrollToTop();
+
   return (
     <div className='containerHeroes'>
       <div className="card" data-aos="zoom-in-left">

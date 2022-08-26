@@ -90,7 +90,14 @@ body {
   text-decoration: none;
 }
 
-.sidenav a>span {
+.sidenav .dropMenu {
+  color: var(--main-color-bg);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidenav a > span, 
+.sidenav .dropMenu > span {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -351,8 +358,7 @@ body {
 .containerEasyRestaurant .card,
 .containerMovieApp .card{
   border: #212121 solid 1px;
-  margin-right: 3%;
-  margin-left: 3%;
+  margin: 3%;
   text-align: justify;
   width: 94%;
 }
@@ -406,9 +412,10 @@ body {
   }
 
   .sidenav {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 
+  .sidenav .dropMenu,
   .sidenav a {
     margin-left: 0;
   }
@@ -450,8 +457,10 @@ body {
     grid-template-columns: 1fr 9fr;
   }
 
-  .sidenav a>span,
-  .sidenav a>.drop {
+  .sidenav .dropMenu > span,
+  .sidenav .dropMenu > .drop,
+  .sidenav a > span,
+  .sidenav a > .drop {
     display: none;
   }
 

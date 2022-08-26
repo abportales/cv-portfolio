@@ -18,7 +18,7 @@ export const Carousel = () => {
                         <div className="carousel-caption bgDark">
                             <h5>Login</h5>
                             <span>
-                                Se proporciona una cuenta administrador, la cual tiene acceso directo y apartir de esta se crean pre-registros
+                                La cuenta administrador, tiene acceso directo y permisos de crear pre-registros
                                 para controlar el acceso y distribución de la aplicación.
                             </span>
                         </div>
@@ -47,10 +47,9 @@ export const Carousel = () => {
                         <div className="carousel-caption bgDark">
                             <h5>Dar de alta empleado y Consulta de ventas</h5>
                             <span>
-                                Solo el administrador puede dar de alta los empleados, y a su vez el mismo puede crear empleados
-                                administradores, para que puedan hacer modificaciones a la aplicación, también se puede observar
-                                la consulta de reportes, este puede ser por día o por rango de fechas, y si lo desea se puede imprimir
-                                físicamente ya que la aplicación genera un archivo PDF.
+                                El administrador da de alta a los empleados, y puede crear empleados administradores, para las
+                                modificaciones que requiera la aplicación, también se observa la consulta de reportes, puede ser por
+                                día o por rango de fechas, se puede imprimir, la aplicación genera un archivo PDF.
                             </span>
                         </div>
                     </div>
@@ -69,9 +68,9 @@ export const Carousel = () => {
                         <div className="carousel-caption bgDark">
                             <h5>Vista general y principal del pedido</h5>
                             <span>
-                                Se puede ver las mesas disponibles del restaurante, asi como los pedidos activos, y al dar clic a la mesa
+                                Se visualizan las mesas disponibles del restaurante, asi como los pedidos activos, al dar clic a la mesa
                                 se puede ver la orden del cliente, cada vez que se hace un pedido, llega una notificación a todos los dispositivos
-                                para que esten enterados en cocina y barra, asi como gerentes.
+                                para avisar a cocina y barra, asi como gerentes.
                             </span>
                         </div>
                     </div>

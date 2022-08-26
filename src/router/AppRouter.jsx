@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
+import { scrollToTop } from "../portfolio/helpers/scrollToTop"
 import { BlogAppPage, Contacto, CvPage, EasyRestaurantPage, GifAppPage, HeroesPage, MarcsPage, MoviePage, OrtodonciaPage } from "../portfolio/pages"
 
 export const AppRouter = () => {

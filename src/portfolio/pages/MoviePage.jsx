@@ -1,6 +1,10 @@
 import React from 'react'
+import { scrollToTop } from '../helpers/scrollToTop';
 
 export const MoviePage = () => {
+
+  scrollToTop();
+
   return (
     <div className='containerMovieApp'>
       <div className="card" data-aos="zoom-in-right">

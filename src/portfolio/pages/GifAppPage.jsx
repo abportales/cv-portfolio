@@ -1,4 +1,9 @@
+import { scrollToTop } from "../helpers/scrollToTop";
+
 export const GifAppPage = () => {
+
+  scrollToTop();
+
   return (
     <div className='containerGifApp'>
       <div className="card" data-aos="zoom-in-right">

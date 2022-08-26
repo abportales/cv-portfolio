@@ -1,6 +1,10 @@
 import React from 'react'
+import { scrollToTop } from '../helpers/scrollToTop';
 
 export const OrtodonciaPage = () => {
+
+  scrollToTop();
+
   return (
     <div className='containerOrtodoncia' data-aos="fade-up">
       <div className="card">

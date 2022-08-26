@@ -1,10 +1,14 @@
+import { scrollToTop } from "../helpers/scrollToTop"
+
 export const BlogAppPage = () => {
+  scrollToTop();
+
   return (
     <div className='containerBlog'>
       <div className="card" data-aos="zoom-in">
         <img src="/assets/android/blog00.jpg" className="img-fluid card-img-top img-thumbnail" alt="..." />
         <div className="card-body">
-        <h3 className="card-title">BlogApp</h3>
+          <h3 className="card-title">BlogApp</h3>
           <p className="card-text">
             Este proyecto forma parte del curso: "Curso definitivo para aprender a programar en Android (Kotlin)"
             se desarrollo en Kotlin, es una aplicación que cuenta con registro de e-mail, desarrollado en firebase-authentication,

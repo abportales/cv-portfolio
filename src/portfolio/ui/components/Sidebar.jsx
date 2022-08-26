@@ -24,7 +24,7 @@ export const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <a href="#" onClick={() => (setCollapse(!collapse))}>
+                            <span className="dropMenu" onClick={() => (setCollapse(!collapse))}>
                                 <i className="bi bi-code-square"></i>
                                 <span>Desarrollo Web</span>
                                 {
@@ -32,7 +32,7 @@ export const Sidebar = () => {
                                         <i className="bi bi-caret-down-square drop"></i>
                                         : <i className="bi bi-caret-up-square drop"></i>
                                 }
-                            </a>
+                            </span>
                             <ul className={collapse ? 'd-none' : 'd-show'}>
                                 <li>
                                     <NavLink to="/marcs" className="nav-link">
@@ -61,7 +61,7 @@ export const Sidebar = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="#" onClick={() => (setCollapse2(!collapse2))}>
+                            <span className="dropMenu" onClick={() => (setCollapse2(!collapse2))}>
                                 <i className='bi bi-android2'></i>
                                 <span>Android</span>
                                 {
@@ -69,7 +69,7 @@ export const Sidebar = () => {
                                         <i className="bi bi-caret-down-square drop"></i>
                                         : <i className="bi bi-caret-up-square drop"></i>
                                 }
-                            </a>
+                            </span>
                             <ul className={collapse2 ? 'd-none' : 'd-show'}>
                                 <li>
                                     <NavLink to="/movie" className="nav-link">

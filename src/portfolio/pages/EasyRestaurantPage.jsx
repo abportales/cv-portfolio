@@ -1,6 +1,10 @@
 import { Carousel } from '../components'
+import { scrollToTop } from '../helpers/scrollToTop';
 
 export const EasyRestaurantPage = () => {
+
+  scrollToTop();
+
   return (
     <div className='containerEasyRestaurant'>
       <div className="card" data-aos="zoom-in-left">

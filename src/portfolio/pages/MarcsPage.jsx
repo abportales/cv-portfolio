@@ -1,6 +1,10 @@
 import React from 'react'
+import { scrollToTop } from '../helpers/scrollToTop';
 
 export const MarcsPage = () => {
+
+  scrollToTop();
+
   return (
     <>
       <div className='containerMarcs'>
