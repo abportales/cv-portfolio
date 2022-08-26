@@ -8,10 +8,13 @@ export const OrtodonciaPage = () => {
           <img src="/assets/web/ortodoncia.jpg" className="img-fluid card-img-top img-thumbnail" alt="..." />
         </a>
         <div className="card-body">
+        <h3 className="card-title">Malagón Ortodoncia y Estética Dental</h3>
           <p className="card-text">
             Este proyecto fue realizado para un cliente que tiene su consultorio dental, el cliente quería mostrar
             todos los servicios que ofrece, brindar información sobre la nueva tecnología que maneja, su ubicación,
             sus redes sociales e información para que lo contacten. <br />
+            La pagina es totalmente responsive, se adapta
+            tanto a diferentes tamaño de pantallas, así como de celulares.<br />
             En este proyecto se puede destacar:
           </p>
           <ul class="list-group card-text">
@@ -34,7 +37,7 @@ export const OrtodonciaPage = () => {
               Implementación de StyledComponents, para los efectos de galeria en las fotos de la sección 'Para pacientes'.
             </li>
             <li class="list-group-item">
-              Consumo de las herramientas para desarrollador de facebook, para obtener comentarios de usuarios y darles otro formato.
+              Consumo de las opciones de desarrollador de facebook, para obtener comentarios de usuarios y asignarles formato.
             </li>
           </ul>
         </div>

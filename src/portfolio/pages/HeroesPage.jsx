@@ -7,10 +7,11 @@ export const HeroesPage = () => {
           <img src="/assets/web/heroes.jpg" className="img-fluid card-img-top img-thumbnail" alt="..." />
         </a>
         <div className="card-body">
+        <h3 className="card-title">Heroes Page</h3>
           <p className='card-text'>
-            El proyecto fue desarrollado en React18, Componentes JSX, Diseño con Boostrap5, e implementación
-            de animaciones por librerias externas, las pruebas se realizaron con Jest, y el hosting vía firebase.
-            En este proyecto se hizo uso de las siguientes características:
+            El proyecto forma parte del curso: "React: De cero a experto (Hooks y Mern)" fue desarrollado en React18, Componentes JSX, Diseño con Boostrap5, e implementación
+            de animaciones por librerias externas, las pruebas se realizaron con Jest, y el hosting vía firebase. <br />
+            Profundizando más, tenemos las siguientes características:
           </p>
           <ul class="list-group card-text">
             <li class="list-group-item">

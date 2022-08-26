@@ -9,6 +9,7 @@ export const MarcsPage = () => {
             <img src="/assets/web/marcs.jpg" className="img-fluid card-img-top img-thumbnail" alt="..." />
           </a>
           <div className="card-body">
+            <h3 className="card-title">Marc's Seafood</h3>
             <p className="card-text">
               La página web se desarrollo en Wordpress, ayudaba a los clientes con un fácil acceso al menú por
               medio del escaneo de código QR que se encontraba en la mesa. Contiene toda la información de los

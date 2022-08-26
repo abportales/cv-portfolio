@@ -1,5 +1,6 @@
 export * from './BaseCourse'
 export * from './BaseSection'
+export * from './Carousel'
 export * from './Courses'
 export * from './List'
 export * from './PersonalData'

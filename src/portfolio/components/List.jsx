@@ -5,7 +5,6 @@ export const List = ({ list }) => {
             {
                 list.map((item) => (
                     <li key={item.id} >{item.p}</li>
-                    // <p key={item.id} >{item.p}</p>
                 ))
             }
         </>
